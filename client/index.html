@@ -2,13 +2,35 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <script src="https://kit.fontawesome.com/59fb8e987b.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>College Management | IIIT Lucknow</title>
+    <link rel="stylesheet" href="callToAction.css">
   </head>
   <body>
+    <div class="callToAction">
+      <div class="popupclosebtn" onclick="closepopup()"><i class="fa-solid fa-circle-xmark"></i></div>
+      <div class="popup">
+        <div class="imgcont"></div>
+        <div class="alert">
+          <h2>Want to get Updated with the latest technologies!!!</h2>
+          <p style="font-size: small;">Let us know your Name and Email</p>
+
+          <input type="text" class="useremail inputs" placeholder="usv0308@gmail.com" onchange="emailfn()">
+          <p class="pemail">*Email must be a valid adderess e.g. me@mydomain.com</p>
+
+          <input type="text" class="username inputs" placeholder="Umesh Singh Verma" oninput="namesfn()">
+          <p class="pname">*Can only contain alphabets</p>
+
+          <button class="readybtn" onclick="readyfn()">I am ready</button>
+          <p style="margin-top: 5%; font-size: small;">Trust us, We value your privacy and will never send the irrelevant information</p>
+        </div>
+        
+      </div>
+    </div>
     <div id="root"></div>
     <div class="portal"></div>
-    <script type="module" src="/src/index.jsx"></script>
+    <!-- <script type="module" src="/src/index.jsx"></script> -->
   </body>
+  <script src="callToAction.js"></script>
 </html>
