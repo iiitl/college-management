@@ -1,0 +1,112 @@
+$primary-color: #41b6f5;
+$secondary-color: #9da5ef;
+$light-gray: #dcf1db;
+$ary-color: #e69c25;
+$dary-color: #f8fe41;
+
+.complaint-form {
+  width: 45%;
+  margin: auto;
+  padding: 0px 40px 20px 40px;
+  font-family: verdana;
+  background: linear-gradient(to bottom, $primary-color, $secondary-color);
+  border-radius: 20px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.complaint-form:before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(to bottom, $primary-color, $secondary-color);
+  transform: rotate(45deg);
+  animation: animate-gradient 5s linear infinite;
+  z-index: -1;
+}
+
+@keyframes animate-gradient {
+  0% {
+    transform: rotate(45deg) translate(-50%, -50%);
+  }
+  50% {
+    transform: rotate(45deg) translate(50%, 50%);
+  }
+  100% {
+    transform: rotate(45deg) translate(-50%, -50%);
+  }
+}
+
+.complaint-form label {
+  display: block;
+  margin-bottom: 20px;
+  color: $light-gray;
+  font-size: 25px;
+}
+
+.complaint-form input[type='text'],
+.complaint-form input[type='email'],
+.complaint-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: $light-gray;
+  color: $primary-color;
+  font-size: 16px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+
+  &:hover,
+  &:focus {
+    background-color: white;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.complaint-form textarea {
+  resize: none;
+  height: 150px;
+}
+
+.character-count {
+  color: $light-gray;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.complaint-form button[type='submit'] {
+  display: block;
+  margin: 30px auto;
+  padding: 20px 20px;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(to bottom, $ary-color, $dary-color);
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+
+  &:hover {
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    transform: translateY(2px);
+  }
+}
+
+.success-message {
+  color: green;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 20px;
+}
+
