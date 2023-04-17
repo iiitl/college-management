@@ -2,7 +2,7 @@ import React from "react"
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom"
 
 import HomePage from "./pages/home/Home.page.jsx"
-import ComplaintPage from "./pages/complaint/complaint.page.jsx"
+import ComplaintPage from "./pages/complaint/ComplaintPage.jsx"
 
 const App = () => {
   return (
