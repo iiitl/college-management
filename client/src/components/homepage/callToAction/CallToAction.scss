@@ -52,8 +52,6 @@ body {
 }
 .popup {
 	background-color: $background-color_1;
-	height: 100%;
-	width: 100%;
 	display: flex;
 	flex-wrap: nowrap;
 	border-radius: 10px;
@@ -102,9 +100,9 @@ body {
 @media screen and (max-width:667px) {
 	#callToAction {
 		font-size: medium;
-		height: auto;
 		color: $color_3;
-		width: 50%;
+		width: 80%;
+		max-height: 0px;
 	}
 	.imgcont {
 		width: 0%;
@@ -119,12 +117,6 @@ body {
 		background-position: center;
 		border-radius: 10px;
 	}
-	.popup {
-		background-color: $background-color_1;
-		display: flex;
-		flex-wrap: nowrap;
-		flex-direction: column;
-	}
 	.inputs {
 		width: 90%;
 		opacity: 80%;
@@ -135,7 +127,7 @@ body {
 	}
 	.popupclosebtn {
 		background-color: $background-color_3;
-		margin-right: -30px;
+		// margin-right: -30px;
 	}
 	.paras {
 		font-weight: bold;
