@@ -1,5 +1,5 @@
 import React from "react";
-import Style from "./CallToAction.css"
+import Style from "./CallToAction.scss"
 setTimeout(()=>{
     let callToAction=document.getElementById("callToAction");
     callToAction.style.display="block";
