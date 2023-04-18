@@ -40,13 +40,13 @@ export default function Confirmation() {
   return (
     <div>
       <ConfirmSubmit changeDis={changeDis} />
-      <div id="confirmation" className="modal" ref={confirmation}>
-        <div className="conform_content animate">
-          <div className="submitting animate" ref={submitting}><AiOutlineCheck /></div>
-          <p id="confirm-text" ref={confirmText}> Do you confirm?</p>
-          <div id="confirm-btn" ref={confirmBtn}>
-            <button id="btn-Yes" style={{ backgroundColor: "tomato" }} onClick={done}>Yes</button>
-            <button id="btn-No" style={{ backgroundColor: "grey" }} onClick={clos}>No</button>
+      <div id="Confirmation__confirmation" className="Confirmation__modal" ref={confirmation}>
+        <div className="Confirmation__conform_content Confirmation__animate">
+          <div className="Confirmation__submitting Confirmation__animate" ref={submitting}><AiOutlineCheck /></div>
+          <p id="Confirmation__confirm-text" ref={confirmText}> Do you confirm?</p>
+          <div id="Confirmation__confirm-btn" ref={confirmBtn}>
+            <button id="Confirmation__btn-Yes" style={{ backgroundColor: "tomato" }} onClick={done}>Yes</button>
+            <button id="Confirmation__btn-No" style={{ backgroundColor: "grey" }} onClick={clos}>No</button>
           </div>
         </div>
       </div>

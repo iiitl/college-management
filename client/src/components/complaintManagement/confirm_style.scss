@@ -13,7 +13,7 @@ $background-color_4: #ffffff;
 		transform: scale(1);
 	}
 }
-#submit {
+#Confirmation__submit {
 	width: 200px;
 	background-color: $background-color_1;
 	color: $color_1;
@@ -23,13 +23,13 @@ $background-color_4: #ffffff;
 	border-radius: 20px;
 	cursor: pointer;
 }
-#confirm-btn {
+#Confirmation__confirm-btn {
 	width: 100%;
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
 }
-#btn-Yes {
+#Confirmation__btn-Yes {
 	width: 45%;
 	margin: 0;
 	box-sizing: border-box;
@@ -38,7 +38,7 @@ $background-color_4: #ffffff;
 	color: $color_1;
 	font-size: 24px;
 }
-#btn-No {
+#Confirmation__btn-No {
 	width: 45%;
 	margin: 0;
 	box-sizing: border-box;
@@ -47,12 +47,12 @@ $background-color_4: #ffffff;
 	color: $color_1;
 	font-size: 24px;
 }
-#confirm-btn, #btn-Yes, #btn-No {
+#Confirmation__confirm-btn, #Confirmation__btn-Yes, #Confirmation__btn-No {
 	&:hover {
 		opacity: 0.8;
 	}
 }
-.modal {
+.Confirmation__modal {
 	display: none;
 	position: fixed;
 	z-index: 1;
@@ -65,7 +65,7 @@ $background-color_4: #ffffff;
 	background-color: $background-color_3;
 	padding-top: 60px;
 }
-.conform_content {
+.Confirmation__conform_content {
 	min-width: 250px;
 	width: 40vw;
 	height: 200px;
@@ -80,10 +80,10 @@ $background-color_4: #ffffff;
 	justify-content: center;
 	align-items: center;
 }
-.animate {
+.Confirmation__animate {
 	animation: animatezoom 0.6s;
 }
-.submitting {
+.Confirmation__submitting {
 	width: 30%;
 	aspect-ratio: 1;
 	border-radius: 50%;
