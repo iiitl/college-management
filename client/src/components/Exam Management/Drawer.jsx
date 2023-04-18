@@ -41,6 +41,9 @@ navigate('/View_Results')
 else if(e.target.innerText=="View Grade Reports"){
 navigate('/Grades')
 }
+else if(e.target.innerText=="Home"){
+  navigate('/')
+}
 
   }
 
@@ -49,7 +52,7 @@ navigate('/Grades')
       <Toolbar />
       <Divider />
       <List>
-        {['Exam Schedule', 'View Results', 'View Grade Reports'].map((text, index) => (
+        {['Exam Schedule', 'View Results', 'View Grade Reports','Home'].map((text, index) => (
 
           <ListItem key={text} disablePadding onClick={opener}>
             <ListItemButton>

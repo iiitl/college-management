@@ -8,7 +8,7 @@ $background-color_3: #c7c7cb;
 
 .home_header {
 	font-family: $font-family_1;
-	height: 4vh;
+	height: 6vh;
 	position: relative;
 	display: flex;
 	justify-content: space-around;
@@ -20,6 +20,8 @@ $background-color_3: #c7c7cb;
 	a {
 		margin-right: auto;
 		text-decoration: none;
+		width: 9rem;
+		text-align: center;
 	}
 }
 .home_header--logo {
