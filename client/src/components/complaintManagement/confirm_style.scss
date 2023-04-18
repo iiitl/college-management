@@ -13,9 +13,6 @@ $background-color_4: #ffffff;
 		transform: scale(1);
 	}
 }
-body {
-	font-family: $font-family_1;
-}
 #submit {
 	width: 200px;
 	background-color: $background-color_1;
@@ -50,7 +47,7 @@ body {
 	color: $color_1;
 	font-size: 24px;
 }
-button {
+#confirm-btn, #btn-Yes, #btn-No {
 	&:hover {
 		opacity: 0.8;
 	}
