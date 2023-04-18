@@ -1,0 +1,172 @@
+.student_class--navbar{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	height: 6vh;
+	position: relative;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	gap: 40px;
+	padding: 16px 64px;
+	background-color: white;
+	box-shadow: 0 1px 5px #ababab;
+}
+.student_class--menu{
+    user-select: none;
+    cursor: pointer;
+}
+
+.student_class--title{
+    margin-right: auto;
+    color: navy;
+}
+.student_class--profile{
+    border-radius: 50%;
+    background-color: rgb(40, 148, 112);
+    color: white;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#student_class--sidebar{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+    transition: 0.2s;
+    padding-top: 10px;
+    color: darkgreen;
+}
+.student_class--closesidebar{
+   margin-left:90%;
+   font-size: 35px;
+   cursor: pointer;
+}
+.student_class--classlist{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 5px 10px;
+}
+.student_class--classlist li{
+    background-color: #b7e1cd;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    padding: 12px;
+    cursor: pointer;
+}
+.student_class--classlist li:hover {
+    background-color: #b7e1cda8;
+} 
+.student_class{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.student_class--hero{
+    margin-top: 5vh;
+    border-radius: 10px;
+    width: 80vw;
+    height: 30vh;
+    background:url(https://gstatic.com/classroom/themes/img_bookclub.jpg) center center no-repeat ;
+    background-size: cover;
+    box-sizing: border-box;
+    padding: 25px;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    color: antiquewhite;
+}
+.student_class-branch{
+    margin-top: 5px;
+    margin-bottom: 0;
+    font-size: 20px;
+}
+.student_class-sections{
+    margin-top: 2vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vw;
+}
+.student_class-notes{
+    box-sizing: border-box;
+    overflow-y: scroll;
+    width: 38vw;
+    height: 40vh;
+    border-radius: 10px;
+    background-color: #b7e1cc;
+    color: darkgreen;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 10px;
+    padding: 10px;
+    font-size: 15
+    px;
+}
+.student_class-assignments{
+    overflow-y: scroll;
+    box-sizing: border-box;
+    width: 38vw;
+    height: 40vh;
+    border-radius: 10px;
+    background-color: #b7e1cc;
+    color: darkgreen;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 10px;
+    padding: 10px;
+}
+.student_class-note{
+    box-sizing: border-box;
+    padding: 5px;
+    width: 100%;
+    border-radius: 20px;
+    background-color: #9ec9b8;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.student_class-notes h4{
+    margin:5px auto 0 auto;
+}
+.student_class-assignment{
+    box-sizing: border-box;
+    padding: 5px;
+    width: 100%;
+    border-radius: 20px;
+    background-color: #9ec9b8;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.student_class-assignments h4{
+    margin:5px auto 0 auto;
+}
+.student_class-assignment img,.student_class-note img{
+    max-width: 40px;
+    max-height: 40px;
+    border: 1px dotted black;
+    border-radius: 50%;
+}
+@media only screen and (max-width:992px){
+    .student_class-sections{
+        flex-direction: column;
+    }
+    .student_class-notes{
+        width: 80vw;
+    }
+    .student_class-assignments{
+        width: 80vw;
+    }
+}
