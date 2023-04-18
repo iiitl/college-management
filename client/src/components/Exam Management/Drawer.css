@@ -1,0 +1,25 @@
+/* .css-k008qs{
+    display: none;
+}
+.MuiBox-root{
+    display: none;
+
+} */
+.css-hyum1k-MuiToolbar-root{
+    display: none !important;
+}
+
+
+.css-12i7wg6-MuiPaper-root-MuiDrawer-paper{
+    margin-top: 3.2em;
+}
+
+
+
+
+
+@media screen and (max-width:900px) {
+    .css-12i7wg6-MuiPaper-root-MuiDrawer-paper{
+        margin-top: 3.2em;
+    }
+}

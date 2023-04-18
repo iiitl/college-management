@@ -11,7 +11,22 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.10.0"
+    "react-router-dom": "^6.10.0",
+    "@devexpress/dx-react-core": "^4.0.3",
+    "@devexpress/dx-react-scheduler": "^4.0.3",
+    "@devexpress/dx-react-scheduler-material-ui": "^4.0.3",
+    "@emotion/react": "^11.4.1",
+    "@emotion/styled": "^11.3.0",
+    "@mui/icons-material": "^5.0.4",
+    "@mui/lab": "^5.0.0-alpha.51",
+    "@mui/material": "^5.0.4",
+    "@mui/x-date-pickers": "^5.0.0-alpha.7",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+   
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.21.3",

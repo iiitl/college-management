@@ -2,7 +2,13 @@ import React from "react";
 import { useRef } from "react";
 
 import Styles from './Header.scss';
+import { NavLink, useNavigate } from "react-router-dom";
 const Header = (props)=>{
+
+    const sender=()=>{
+        const navigate=useNavigate()
+navigate('/DashBoard')
+    }
     const navRef=useRef();
     const showNavbar=()=>{
         navRef.current.classList.toggle("home_header--responsive--nav");
@@ -30,6 +36,9 @@ const Header = (props)=>{
                 </a>
                 <a href="#">Courses</a>
                 <a href="#">Contact Us</a>
+                {/* <a onClick={sender}>Exam Management</a> */}
+                <NavLink to={'/DashBoard'}>Exam Management</NavLink>
+                
                 <button className="home_header--dropdown home_header--dropdown-closeBtn" onClick={showNavbar}>&#9747;</button>
             </nav>
             <button className="home_header--login">

@@ -1,0 +1,38 @@
+.result {
+    display: flex;
+    /* height: 100vh; */
+    width: 100vw+2rem;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+  
+    flex-wrap: wrap;
+    /* position:absolute;
+    top: 50%;
+    left: 50%; */
+    position: absolute;
+    left: 19rem;
+    top: 9rem;
+    
+}
+
+.reslt div {
+
+    display: flex;
+    gap: 1px;
+}
+
+.specs td {
+    border: 2px solid black;
+    text-align: center;
+    padding: 2em;
+}
+
+.result-child {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    flex-wrap: wrap;
+
+}

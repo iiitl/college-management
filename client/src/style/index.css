@@ -1,0 +1,30 @@
+/* Variables */
+@import url("variables/_breakpoints.scss");
+@import url("variables/_colors.scss");
+@import url("variables/_fonts.scss");
+@import url("variables/_sizes.scss");
+/* Normalize */
+@import url("normalize/_normalize.scss");
+/* Mixins */
+@import url("mixins/_pseudo.mixin.scss");
+@import url("mixins/_responsive-ratio.mixin.scss");
+@import url("mixins/_font.mixin.scss");
+@import url("mixins/_color.mixin.scss");
+/* Imports */
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 1px;
+}
+
+/* Global Styles */
+/* Utils */
+.grow-full {
+  height: 100vh;
+  width: 100%;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=index.css.map */

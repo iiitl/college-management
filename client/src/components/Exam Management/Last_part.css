@@ -1,0 +1,31 @@
+.beauty {
+    border: 1px solid white;
+    color:white;
+    width: 18rem;
+    padding: 0.6em;
+    border-radius: 2em;
+    display: flex;
+    justify-content: space-around;
+    font-weight: 600;
+    font-size: 0.8em;
+    align-items: center;
+    /* background-color: #DCE6FC;
+ */
+ /* background: rgb(2,0,36); */
+ /* background: rgb(62,62,249); */
+ /* background: linear-gradient
+ (90deg, rgba(62,62,249,1) 26%, rgba(2,0,36,1) 100%, rgba(0,212,255,1) 100%); */
+ background-color: #0D6EFD;
+}
+
+.flexer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-left: 20rem;
+}
+.semselector{
+    position: absolute;
+    top: 20%;
+    left: 30%;
+}

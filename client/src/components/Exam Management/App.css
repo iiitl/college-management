@@ -1,0 +1,63 @@
+css-1ps6pg7-MuiPaper-root {
+  height:23px;
+}
+css-1ps6pg7-MuiPaper-root {
+  width:70vw;
+}
+
+.css-99cbwm .MainLayout-flexRow {
+
+  width:70vw;
+}
+/* tr{
+  height:
+} */
+.css-15f0u4c-MuiTable-root.Table-table {
+  table-layout: fixed;
+  min-width: 700px;
+  width: 70%;
+}
+
+.MainLayout-container{
+  display:flex ;
+  align-items: center;
+}
+.css-1vlozq7{
+  width:70vw;
+}
+.MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1ps6pg7-MuiPaper-root{
+  margin-left: 60px;
+}
+.scheduler{
+  display: flex;
+  align-items: center;
+  /* align-items: center; */
+  justify-content: center;
+  margin-top: 6rem;
+  margin-left: 10rem;
+  position: relative;
+  
+}
+.MuiTableRow-root{
+height:20px;
+}
+
+.Appointment-appointment{
+  height:2px;
+}
+.css-1tazxmh.Layout-root {
+  width:13em;
+}
+/* .Layout-root {
+  width:13em;
+} */
+/* .css-jrrpff{
+  width:13em;
+} */
+/* .css-vr9er9-MuiModal-root-MuiDrawer-root{
+  width:301px;
+} */
+.Overlay-halfSize{
+  width:301px;
+
+}
