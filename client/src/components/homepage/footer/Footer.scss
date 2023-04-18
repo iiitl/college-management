@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+$bg_col : #24262b;
+$font-fam : 'Poppins', sans-serif;
+$txt-col : #fff;
+$underline-col : #e91e63;
+$txt-sec : #777;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.footer{
+    background-color: $bg_col;
+    font-family: $font-fam;
+    min-width: 200px;
+    width: 100%;
+    height: auto;
+    clear: both;
+    position: relative;
+    bottom: -230px;
+}
+.foot-con{
+    max-width: 85%;
+    margin: auto;
+    padding: 50px 0 30px 0;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.footer-col{
+    width: 25%;
+    padding-left: 50px;
+}
+.footer-col a{
+    text-decoration: none;
+}
+.footer-col li{
+    list-style: none;
+}
+.footer-col h4{
+    color: $txt-col;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    position: relative;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: $underline-col;
+    height: 2px;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 15px;
+    font-weight: 400;
+    color: $txt-sec;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    transform: translateX(10px);
+    color: #eee;
+}
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    padding: 5px 0;
+    text-align: center;
+    line-height: 40px;
+    font-size: 25px;
+    color: #fff;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+    color: $txt-sec;
+    background-color: $txt-col;
+}
+@media (max-width: 850px) {
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 450px) {
+    .footer-col{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+}
