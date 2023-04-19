@@ -1,0 +1,22 @@
+.hello{
+    background-color: rgb(1, 27, 36);
+    height: 200px;
+}
+
+#img{
+    border-radius: 50%;
+}
+
+.monark{
+    padding-top: 50px;
+    margin-left: 70px ;
+}
+
+.m1,.m2{
+    display: inline-block;
+}
+.m2{
+    color: white;
+    margin-left: 20px;
+    vertical-align: middle;
+}

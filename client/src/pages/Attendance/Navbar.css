@@ -1,0 +1,94 @@
+.at_nav{
+    background-color: rgb(1, 27, 36);
+    box-shadow: 0px 0px 5px 0px rgba(205, 205, 205, 0.759);
+}
+
+.at_navbar {
+    padding-top: 10px;
+    padding-bottom: 10px    ;
+}
+
+.at_navbar-brand {
+    letter-spacing: 2px;
+    font-size: 25px; 
+}
+
+.at_active{
+    
+    cursor:pointer;
+    border-bottom: 3px solid rgb(18, 227, 53);
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.at_nav-item {
+    margin-left: 10px;
+    width: fit-content;
+    color: rgb(18, 227, 53);
+}
+
+#at_icon{
+    font-family: Cooper Black;
+    border: 1px solid white;
+    padding-left: 13px;
+    border-radius: 50%;
+    padding-right: 10px;
+    height: 49px;
+    transition: background-color 0.15s;
+}
+#at_icon:hover{
+    color: rgb(1, 27, 36);
+    background-color: rgb(18, 227, 53);
+    border: 1px solid rgb(18, 227, 53);
+}
+
+.at_btn{
+    margin-right: 10px;
+}
+.at_form-control {
+    margin-left: 10px;
+    height: 24px;
+}
+
+.modulo{
+    color: rgba(189, 187, 187, 0.525);
+    margin-left: 10px;
+}
+.at_bell{
+    color: white;
+    margin-left: 10px;  
+}
+.at_user{
+    color: rgba(255, 255, 255, 0.603);
+    margin-left: 10px;
+    border-radius: 50%;
+  
+}
+
+@media screen and (max-width: 992px){
+    .active{
+        border: none;
+        margin-top: 20px;
+    }
+
+    .at_btn{
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+    .modulo{
+        opacity: 0;
+    }
+    
+}
+
+@media screen and (max-width: 576px){
+    .at_form-control{
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 317px){
+    #atten{
+        display: none;
+    }
+}

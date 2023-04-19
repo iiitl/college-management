@@ -45,6 +45,7 @@ body {
 .popupclosebtn {
 	justify-self: right;
 	position: absolute;
+	z-index: 10;
 	right: 0;
 	background-color: $background-color_1;
 	border: none;
