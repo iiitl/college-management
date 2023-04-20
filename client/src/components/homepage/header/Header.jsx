@@ -1,6 +1,5 @@
 import React from "react";
 import { useRef } from "react";
-
 import Styles from './Header.scss';
 const Header = (props)=>{
     const navRef=useRef();
@@ -12,7 +11,7 @@ const Header = (props)=>{
         loginInfo=props.name;
     }
     else{
-        loginInfo=<a href="#">Login</a>;
+        loginInfo=<a href="/LoginForm" target="_blank">Login</a>;
     }
     return (
         <header className="home_header">

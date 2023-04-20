@@ -3,7 +3,7 @@ import Style from "./CallToAction.scss"
 setTimeout(()=>{
     let callToAction=document.getElementById("callToAction");
     callToAction.style.display="block";
-},1000)
+},5000)
 function closefn(){
     let callToAction=document.getElementById("callToAction");
     callToAction.style.display="none";
