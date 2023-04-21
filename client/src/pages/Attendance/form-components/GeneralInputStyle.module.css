@@ -1,0 +1,14 @@
+
+
+.generalInput {
+  width: 25rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  border: none;
+  outline: 1px solid gray;
+  margin: 2px auto;
+}
+
+.generalInput:focus {
+  outline: 1px solid #151515;
+}

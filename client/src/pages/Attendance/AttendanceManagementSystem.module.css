@@ -1,0 +1,64 @@
+
+.textCenter {
+  text-align: center;
+}
+
+.containerStyle {
+  background-color: white;
+  height: max-content;
+  width: max-content;
+  padding: 2rem 2.5rem;
+  border-radius: 0.5rem;
+  transition:0.3s ease;
+}
+
+.formLabelInputs {
+  display: flex;
+  flex-direction: column;
+  margin:1.5rem 0px;
+}
+
+.marginTB {
+}
+
+.containerStyle:hover {
+  box-shadow: 0 3px 0.75rem 0.25rem rgba(0, 0, 0, 0.226);
+  transition:0.3s ease;
+  
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.checkbox {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.gap {
+  gap: 1rem;
+}
+
+.wmaxcontent {
+  width: max-content;
+}
+
+.present_container {
+  display: flex;
+  gap:1rem;
+  justify-content: center;
+  align-items: center;
+}
