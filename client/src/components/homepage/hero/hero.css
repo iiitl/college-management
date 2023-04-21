@@ -1,0 +1,109 @@
+.banner {
+    margin-top: 0;
+    background-image: url('https://wallup.net/wp-content/uploads/2017/11/23/438053-stars-night.jpg');
+    padding: 260px 0 100px 0;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .banner .tagline {
+    font-weight: 700;
+    color: rgb(223, 220, 233);
+    
+    padding: 8px 10px;
+    background: linear-gradient(90deg, rgba(170, 54, 124, 0.5) -6%, rgba(74, 47, 189, 0.5) 112%);
+    font-size: 50px;
+    margin-left:3rem;
+    margin-bottom: 16px;
+    display: inline-block;
+  }
+  .banner h1 {
+    font-size: 65px;
+    font-weight: 700;
+    color: rgb(210, 203, 236);
+    letter-spacing: 0.8px;
+    line-height: 1;
+    margin-left: 15px ;
+    margin-bottom: 20px;
+    display: block;
+  }
+  .banner p {
+    color: #B8B8B8;
+    margin-left: 15px ;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    width: 96%;
+  }
+
+  .banner button {
+    color: rgb(210, 203, 236);
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 60px;
+    letter-spacing: 0.8px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(69, 8, 149, 0.856);
+  }
+
+  .banner button svg {
+    font-size: 25px;
+    margin-left: 10px;
+    transition: 0.3s ease-in-out;
+    line-height: 1;
+  }
+  .banner button:hover svg {
+    margin-left: 25px;
+  }
+
+  
+  .txt-rotate > .wrap {
+    border-right: 0.08em solid #666;
+  }
+
+
+  .connectbutton{
+    height: 2.5rem;
+    margin-left: 15px ;
+    text-align: center;
+    background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+  }
+
+  a {text-decoration: none; }
+ 
+  .tagline{
+   
+
+   text-align: center;
+  }
+.parent{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+ 
+
+@media(max-width:850px) {
+    .heroimage{
+        display: none;
+
+      
+    }
+ 
+
+        .banner .tagline {
+            font-weight: 700;
+            color: rgb(223, 220, 233);
+            
+            padding: 8px 10px;
+            background: linear-gradient(90deg, rgba(170, 54, 124, 0.5) -6%, rgba(74, 47, 189, 0.5) 112%);
+            font-size: 50px;
+            margin-left:1px;
+            margin-bottom: 16px;
+            display: inline-block;
+          }
+
+    
+}

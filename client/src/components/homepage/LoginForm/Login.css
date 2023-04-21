@@ -1,0 +1,584 @@
+/* =================================================================
+================================================================= */
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+
+.overlay-panel {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 40px;
+	text-align: center;
+	top: 0;
+	height: 100%;
+	width: 50%;
+	transform: translateX(0);
+	transition: transform 0.6s ease-in-out;
+}
+
+.social-container {
+	margin: 20px 0;
+}
+
+
+/* ====================================
+Styling For just CREATE ACCOUNT PART
+==================================== */
+.Login_h1 { font-size: 32px; }
+
+.createAccount { 
+	max-width: 960px; 
+	height: 100%;
+	padding-top: 30px;
+}
+
+.accountType {
+	position: relative;
+	display: flex;
+	min-height: 450px;
+    width: 340px;
+	border-radius: 8px 8px 0 0;
+	overflow: hidden;
+}
+
+.NewSignUp {
+	flex: 1;
+}
+
+.NewSignUp label {
+	box-sizing: border-box;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+	height: 30px;
+	padding: 10px;
+    line-height: 10px;
+	text-align: center;
+	background: #b9b9b9;
+	cursor: pointer;
+	transition: background 0.5s ease;
+	
+}
+
+.NewSignUp label:hover {
+	background: #929292;
+}
+
+.content {
+	position: absolute;
+	left: 0; bottom: 0; right: 0;
+    top: 40px; 
+	border-radius: 0 0 8px 8px;
+	background: #ffffff;
+	transition: 
+	opacity 0.5s ease,
+	transform 0.5s ease;
+	opacity: 0;
+	transform: scale(0.1);
+	transform-origin: center;
+	
+}
+
+.NewSignUp [type=radio] { display: none; }
+
+[type=radio]:checked ~ label {
+	background: #0f41f5;
+    color: white;
+	z-index: 2;
+}
+
+[type=radio]:checked ~ label ~ .content {
+	z-index: 1;
+	opacity: 1;
+	transform: scale(1);
+}
+
+@media screen and (max-width: 767px) {
+	.accountType { min-height: 450px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------
+    REST OF THE FORM
+------------------------    */
+
+
+
+.Login_h1 {
+	font-weight: bold;
+	margin: 0;
+    margin-top: 20px;
+}
+
+.Login_p_tag {
+	font-size: 14px;
+	font-weight: 100;
+	line-height: 20px;
+	letter-spacing: 0.5px;
+	margin: 20px 0 30px;
+}
+
+.Login_span_tag {
+	font-size: 14px;
+}
+
+.Login_a_tag {
+	color: #333;
+	font-size: 14px;
+	text-decoration: none;
+	margin: 15px 0;
+}
+
+.Login_btn_tag, .button {
+	border-radius: 20px;
+	border:1px solid #0f41f5;
+	background-color: #0f41f5;
+
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	margin-top: 9px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+}
+
+.Login_btn_tag:active, .button:active  {
+	transform: scale(0.95);
+}
+
+.Login_btn_tag:focus, .button:focus  {
+	outline: none;
+}
+
+.button {
+	margin-top: 0px;
+}
+
+.Login_btn_tag.ghost {
+	background-color: transparent;
+	border-color: #FFFFFF;
+	-webkit-transition: background-color 0.2s ease-out;
+  -moz-transition: background-color 0.2s ease-out;
+  -o-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out;
+}
+
+.reverseGhost{
+	border-radius: 20px;
+	border: 1px solid white;
+	background-color: #ffffff;
+	color: #FF4B2B;
+	font-size: 12px;
+	display: none;
+	font-weight: bold;
+	padding: 10px 35px;
+	margin-top: 12px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in, border 0.2s;
+}
+
+button.reverseGhost:hover{
+	border: 1px solid #FF4B2B;
+}
+
+.memberForm, .studentForm {
+	width: 340px;
+	padding: 0px;
+}
+
+
+
+
+.ghost:hover{
+    background-color: white;
+	color: #0f41f5;
+}   
+
+form, .form {
+	background-color: #FFFFFF;
+	display: flex;
+	width: 421.6px;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 50px;
+	height: 100%;
+	text-align: center;
+}
+
+.Login_input_tag, .sUpUserWing {
+	background-color: #eee;
+	border: none;
+	outline: none;
+	padding: 12px 15px;
+	margin: 4px 0;
+	width: 100%;
+}
+
+.container {
+	border-radius: 10px;
+  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+			0 10px 10px rgba(0,0,0,0.22);
+	position: relative;
+	overflow: hidden;
+	width: 900px;
+	max-width: 100%;
+	min-height: 600px;
+}
+
+.form-container {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	transition: all 0.6s ease-in-out;
+}
+
+.sign-in-container {
+	left: 0;
+	width: 50%;
+	z-index: 2;
+}
+
+.container.right-panel-active .sign-in-container {
+	transform: translateX(100%);
+}
+
+.sign-up-container {
+	left: 0;
+	width: 50%;
+	opacity: 1;
+	z-index: 1;
+}
+
+.container.right-panel-active .sign-up-container {
+	transform: translateX(100%);
+	opacity: 1;
+	z-index: 5;
+	animation: show 0.6s;
+}
+
+@keyframes show {
+	0%, 49.99% {
+		opacity: 0;
+		z-index: 1;
+	}
+	
+	50%, 100% {
+		opacity: 1;
+		z-index: 5;
+	}
+}
+
+.overlay-container {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 50%;
+	height: 100%;
+	overflow: hidden;
+	transition: transform 0.6s ease-in-out;
+	z-index: 100;
+}
+
+.container.right-panel-active .overlay-container{
+	transform: translateX(-100%);
+}
+
+.overlay {
+	background: #FF416C;
+
+	background: -webkit-linear-gradient(to right, #0f41f5, #4190ff);
+	background: linear-gradient(to right, #0f41f5, #4190ff);
+	
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0 0;
+	color: #FFFFFF;
+	position: relative;
+	left: -100%;
+	height: 100%;
+	width: 200%;
+  	transform: translateX(0);
+	transition: transform 0.6s ease-in-out;
+}
+
+.container.right-panel-active .overlay {
+  	transform: translateX(50%);
+}
+
+.overlay-panel {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 40px;
+	text-align: center;
+	top: 0;
+	height: 100%;
+	width: 50%;
+	transform: translateX(0);
+	transition: transform 0.6s ease-in-out;
+}
+
+.overlay-left {
+	transform: translateX(-20%);
+}
+
+.container.right-panel-active .overlay-left {
+	transform: translateX(0);
+}
+
+.overlay-right {
+	right: 0;
+	transform: translateX(0);
+}
+
+.container.right-panel-active .overlay-right {
+	transform: translateX(20%);
+}
+
+.social-container {
+	margin-bottom: 20px 0;
+	margin-top: 20px;
+}
+
+.social-container a {
+	border: 1px solid #DDDDDD;
+	border-radius: 50%;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 5px;
+	height: 40px;
+	width: 40px;
+}
+
+#sUpStudentAlert, #sUpMemberAlert  {
+	text-align: left;
+	color: red;
+	font-size: 13px;
+	margin-left: 5px;
+}
+
+
+@media screen and (max-width: 850px) {
+	body{
+		background-color: white;
+	}
+
+	.overlay-container {
+		display: none;
+	}
+	
+	.container{
+		box-shadow: none;
+	}
+	
+
+	.form-container{
+		position: absolute;
+		left: 23%;
+	}
+
+	.reverseGhost{
+		display: block;
+	}
+
+	.sign-in-container{
+		height: 500px;
+		position: absolute;
+		top: 50px;
+	}
+
+	.form{
+		height: 550px;
+		margin-top: 5px;
+		padding: 0px;
+	}
+	.super{
+		border-radius: 10px;
+		box-shadow: 0px 0px 5px 2px rgb(187, 187, 187);
+		height: 555px;
+		width:470px;
+		margin-top: 30px;
+		margin-left: 130px;
+	}
+	.createAccount{
+		padding-top: 10px;
+	}
+	div.form{
+		/* margin-top: 45px; */
+		padding-bottom: 20px;
+		height: 100px;
+	}
+	.Login_cross2{
+		margin-top: 40px;
+		
+	}
+	.Login_cross:hover{
+		border-radius: 50%;
+	}
+	.Login_cross2:hover{
+		border-radius: 50%;
+		cursor:pointer;
+	}
+	
+  }
+#re{
+	color: black;
+	font-family: Arial;
+	margin-bottom: 10px;
+}
+
+
+@media screen and (max-width:620px) {
+	.form-container{
+		left: 13%;
+	}
+	.super{
+		margin-left: 40px;
+		padding: 0px;
+	}
+	div.form{
+		height: 100px;
+	}
+	div.student.content{
+		height: 370px;
+	}
+	div.member.content{
+		height: 370px;
+	}
+}
+
+
+
+@media screen and (max-width:540px) {
+	.form-container{
+		left: 5%;
+	}
+	.super{
+		width: 400px;
+	}
+	form.Login_form_tag{
+		padding-left: 30px;
+		padding-right: 0px;
+		width: 350px;
+		margin-right: 10px;
+		margin-left: 30px;
+	}
+	form.studentForm.Login_form_tag{
+		margin-left: 0px;
+		padding-left: 0px;
+	}
+	form.memberForm.Login_form_tag{
+		margin-left: 0px;
+		padding-left: 0px;
+	}
+	div.student.content{
+		margin-left: 0px;
+	}
+	div.form{
+		margin-left: 30px;
+		width: 360px;
+
+		margin-top: 45px;
+		padding-left: 0px;
+	}
+	.Login_cross,.Login_cross2{
+		margin-left:35px;
+		border-radius: 50%;
+	}
+}
+
+
+
+@media screen and (max-width:460px) {
+	.form-container{
+		left: 0%;
+	}
+	.super{
+		width: 340px;
+	}
+	form.Login_form_tag{
+		padding-right: 0px;
+		width: 300px;
+		margin-right: 10px;
+		margin-left: 60px;
+	}
+	div.student.content{
+		width: 300px;
+		margin-left: 24px;
+	}
+	div.form{
+		width: 300px;
+		margin-left: 70px;
+	}
+	.Login_cross,.Login_cross2{
+		margin-left:65px;
+		border-radius: 50%;
+	}
+	div.member.content	{
+		margin-left: 20px;
+	}
+
+}
+
+
+
+
+
+
+.container{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.Login_cross,.Login_cross2{
+	font-size: 20px;
+	width: fit-content;
+	height: fit-content;
+	padding: 0px 8px;
+	padding-bottom: 2px;
+	transition: color 0.1s, background-color 0.1s;
+}
+.Login_cross:hover,.Login_cross2:hover{
+	color: white;
+	background-color: black;
+	cursor:pointer;
+}
+.Login_cross2{
+	text-align: right;
+	align-items: end;
+}
+
+.Login_login{
+	height: 500px;
+	margin-right: 0px;
+}
+
