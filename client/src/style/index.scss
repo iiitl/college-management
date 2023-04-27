@@ -28,8 +28,35 @@
   width: 100%;
 }
 
-.center {
+.services-main-head{
+  text-align: center;
+}
+.services-main-logo{
+  display: block;
+  margin: auto;
+}
+.services-main-div{
+  margin-top: 5vh;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.services-div{
+  width: 230px;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+  0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+
+}
+
+.services-card-head{
+  border-bottom: 2px solid black;
+}
+.services-card-list{
+  padding: 3px;
 }
